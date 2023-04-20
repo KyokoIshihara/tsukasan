@@ -46,18 +46,23 @@
     border-radius: 50%;
     position: absolute;
     left: 0;
-    top: 0.5rem;
+    top: 0.6rem;
 }
 
 .title__text--second {
     font-size: rem(24);
-
+    line-height: 136%;
+    padding-left: rem(23);
 }
 
 .title__text--second::before {
 
     width: rem(13);
     height: rem(13);
-    margin-right: rem(10);
+    // margin-right: rem(15);
     top: 0.7rem;
+    @include mq("md"){
+        
+        margin-right: rem(10);
+    }
 }

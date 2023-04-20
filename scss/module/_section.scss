@@ -1,7 +1,6 @@
 @use "../global" as *;
 
 .section {
-    // margin-bottom: 80px;
     margin-bottom: min(vw(375, 80), rem(80));
 
     @include mq("md") {
@@ -11,11 +10,12 @@
 
 // ファーストビュー
 .section__fv {
-    // margin-bottom: min(vw(375, 100), 100px);
-    margin-bottom: min(vw(375, 80), 80px);
+    padding-bottom: min(vw(375, 80), 80px);
+    overflow: hidden;
+    margin-bottom: 0;
 
     @include mq("md") {
-        margin-bottom: min(vw(1366, 160), 160px);
+        padding-bottom: min(vw(1366, 160), 160px);
     }
 }
 
@@ -28,17 +28,12 @@
 
 // Buisiness
 .section__buisiness {
-    // padding-top: rem(80);
-    // padding-bottom: rem(80);
     background-color: $sub-background;
     position: relative;
     z-index: -100;
     margin-bottom: 0;
-    // overflow: hidden;
 
     @include mq("md") {
-        // padding-top: rem(120);
-        // padding-top: rem(160);
     }
 }
 
@@ -47,7 +42,6 @@
     content: "";
     display: inline-block;
     width: 100%;
-    // height: calc(100% - 129px);
     height: 100%;
     background-image: url("../images/buisiness-bg-line-SP-top.svg");
     background-repeat: no-repeat;
@@ -70,13 +64,12 @@
     display: inline-block;
     width: 100%;
     height: 100%;
-    // height: calc(100% - 505px);
     background-image: url("../images/buisiness-bg-line-SP-bottom.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
     position: absolute;
-    bottom: 555px;
+    bottom: 584px;
     left: 0;
     z-index: -99;
 
@@ -104,7 +97,6 @@
     position: relative;
     margin-bottom: max(vw(375, 30.23), rem(30.23));
     @include mq("md"){
-        // overflow-x: hidden;
         margin-bottom: min(vw(1366, 59.23), rem(59.23));
     }
 }
@@ -125,7 +117,6 @@
     @include mq("md"){
         background-image: url("../images/jobinfo-bg-line-PC-top.svg");
         top: 143px;
-        // height: min(vw(1366, 688.03), rem(688.03));
     }
 }
 // 背景下部の波線
@@ -139,17 +130,13 @@
     background-size: contain;
     background-position: bottom;
     position: absolute;
-    // top: 80%;
     bottom: 12.62px;
     left: 0;
     z-index: -101;
     @include mq("md"){
         background-image: url("../images/jobinfo-bg-line-PC-bottom.svg");
-        // top: 75%;
         bottom: -248px;
         z-index: -1;
-        // height: min(vw(1366, 688.03), rem(688.03));
-        // width: 100vw;
     }
 }
 
@@ -176,7 +163,6 @@
         background-size: contain;
         background-position: top;
         position: absolute;
-        // top: rem(159.97);
         bottom: rem(327);
         z-index: -99;
     }
@@ -200,12 +186,9 @@
         display: inline-block;
         background-repeat: no-repeat;
         background-size: contain;
-        // width: 100%;
         width: 1366px;
         max-width: 1366px;
-        // height: min(vw(1366, 988), rem(988));
         height: 100%;
-        // height: rem(988);
         display: inline-block;
         background-color: $sub-background;
         position: absolute;
@@ -248,9 +231,7 @@
 // エントリー
 .section__entry {
     background-color: $sub-background;
-    // padding-top: max(vw(375, 80), rem(80));
     padding-top: rem(80);
-    // padding-bottom: max(vw(375, 80), rem(80));
     padding-bottom: rem(80);
     padding-left: rem(16);
     padding-right: rem(16);
@@ -259,7 +240,6 @@
     background-color: $sub-background;
     margin-bottom: 0;
     @include mq("md"){
-        // background-image: radial-gradient($main-color 2px, transparent 2px);
         background-size: 45px 45px;
         
     }

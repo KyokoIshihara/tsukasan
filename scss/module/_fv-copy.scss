@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    overflow: hidden;
+    // overflow: hidden;
     @include mq("md"){
         max-height: 645px;
         height: 100%;
@@ -100,7 +100,7 @@
 .fv-copy3{
     display: block;
     letter-spacing: 0.21em;
-    margin-left: -0.4em;
+    margin-left: -1.4em;
     transform: translate(5.5%, -1%);
     @include mq("md"){
         letter-spacing: 0.1em;

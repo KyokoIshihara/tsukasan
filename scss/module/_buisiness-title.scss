@@ -2,6 +2,7 @@
 
 .buisiness-title {
     justify-content: flex-start;
+    margin-bottom: 0;
 
     @include mq("md") {
         flex-direction: row;
@@ -13,7 +14,10 @@
 }
 
 .buisiness-title__images {
-
+    width: vw(375, 336);
+    height: vw(375, 101);
+    margin-bottom: rem(7);
+    
     @include mq("md") {
         width: calc(540px / $inner * 100%);
         height: calc(142px / $inner * 100%);
