@@ -1,0 +1,267 @@
+@use "../global" as *;
+
+.section {
+    // margin-bottom: 80px;
+    margin-bottom: min(vw(375, 80), rem(80));
+
+    @include mq("md") {
+        margin-bottom: rem(180);
+    }
+}
+
+// ファーストビュー
+.section__fv {
+    // margin-bottom: min(vw(375, 100), 100px);
+    margin-bottom: min(vw(375, 80), 80px);
+
+    @include mq("md") {
+        margin-bottom: min(vw(1366, 160), 160px);
+    }
+}
+
+// Message
+.section__message {
+    @include mq("md") {
+        margin-bottom: rem(199);
+    }
+}
+
+// Buisiness
+.section__buisiness {
+    // padding-top: rem(80);
+    // padding-bottom: rem(80);
+    background-color: $sub-background;
+    position: relative;
+    z-index: -100;
+    margin-bottom: 0;
+    // overflow: hidden;
+
+    @include mq("md") {
+        // padding-top: rem(120);
+        // padding-top: rem(160);
+    }
+}
+
+// 上部背景の波線のあしらい
+.section__buisiness::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    // height: calc(100% - 129px);
+    height: 100%;
+    background-image: url("../images/buisiness-bg-line-SP-top.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    position: absolute;
+    top: 129px;
+    left: 0;
+    z-index: -99;
+
+    @include mq("md") {
+        background-image: url("../images/buisiness-bg-line-PC-top.svg");
+        top: 195px;
+    }
+}
+
+// 下部背景の波線のあしらい
+.section__buisiness::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    // height: calc(100% - 505px);
+    background-image: url("../images/buisiness-bg-line-SP-bottom.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: absolute;
+    bottom: 555px;
+    left: 0;
+    z-index: -99;
+
+    @include mq("md") {
+        background-image: url("../images/buisiness-bg-line-PC-bottom.svg");
+        bottom: -31px;
+    }
+}
+
+// PickUP
+.section__pickup {
+    margin-bottom: max(vw(375, 30), rem(30));
+    @include mq("md"){
+        margin-bottom: min(vw(1366, 80), rem(80));
+    }
+}
+
+// Color
+.section__color {
+    margin-bottom: 0;
+}
+
+// JobInfo
+.section__jobinfo {
+    position: relative;
+    margin-bottom: max(vw(375, 30.23), rem(30.23));
+    @include mq("md"){
+        // overflow-x: hidden;
+        margin-bottom: min(vw(1366, 59.23), rem(59.23));
+    }
+}
+// 背景上部の波線
+.section__jobinfo::before{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/jobinfo-bg-line-SP-top.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    position: absolute;
+    top: 288px;
+    left: 0;
+    z-index: -99;
+    @include mq("md"){
+        background-image: url("../images/jobinfo-bg-line-PC-top.svg");
+        top: 143px;
+        // height: min(vw(1366, 688.03), rem(688.03));
+    }
+}
+// 背景下部の波線
+.section__jobinfo::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/jobinfo-bg-line-SP-bottom.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: absolute;
+    // top: 80%;
+    bottom: 12.62px;
+    left: 0;
+    z-index: -101;
+    @include mq("md"){
+        background-image: url("../images/jobinfo-bg-line-PC-bottom.svg");
+        // top: 75%;
+        bottom: -248px;
+        z-index: -1;
+        // height: min(vw(1366, 688.03), rem(688.03));
+        // width: 100vw;
+    }
+}
+
+// Senior Voice
+.section__voice {
+    margin-bottom: 0;
+}
+
+// FLOW 
+.section__flow{
+    position: relative;
+    margin-bottom: 0;
+}
+
+.section__flow::before {
+    display: none;
+    @include mq("md"){
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/flow-bg-line-PC-top.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        position: absolute;
+        // top: rem(159.97);
+        bottom: rem(327);
+        z-index: -99;
+    }
+
+}
+
+// FAQ
+.section__faq {
+    margin-bottom: 0;
+    @include mq("md"){
+        position: relative;
+        height: fit-content;
+        overflow: hidden;
+    }
+}
+
+.section__faq::before{
+    display: none;
+    @include mq("md"){
+        content: "";
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        // width: 100%;
+        width: 1366px;
+        max-width: 1366px;
+        // height: min(vw(1366, 988), rem(988));
+        height: 100%;
+        // height: rem(988);
+        display: inline-block;
+        background-color: $sub-background;
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        border-radius: 0 0 15% 15%;
+    }
+
+}
+
+
+// company
+.section__company {
+    position: relative;
+    margin-bottom: 0;
+    @include mq("md"){
+    }
+}
+// 背景上部の波線
+.section__company::before{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/company-bg-line-SP.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    position: absolute;
+    top: max(vw(375, 235.5), rem(235.5));
+    left: 0;
+    z-index: -99;
+    @include mq("md"){
+        background-image: url("../images/company-bg-line-PC.svg");
+        top: 244.08px;
+    }
+}
+
+// エントリー
+.section__entry {
+    background-color: $sub-background;
+    // padding-top: max(vw(375, 80), rem(80));
+    padding-top: rem(80);
+    // padding-bottom: max(vw(375, 80), rem(80));
+    padding-bottom: rem(80);
+    padding-left: rem(16);
+    padding-right: rem(16);
+    background-image: radial-gradient(#f45f5fad 2px, transparent 2px);
+    background-size: 23.94px 23.94px;
+    background-color: $sub-background;
+    margin-bottom: 0;
+    @include mq("md"){
+        // background-image: radial-gradient($main-color 2px, transparent 2px);
+        background-size: 45px 45px;
+        
+    }
+}
+

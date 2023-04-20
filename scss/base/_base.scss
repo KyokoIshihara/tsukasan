@@ -1,0 +1,53 @@
+// リキッドレイアウトのための設定
+
+@use "../global/" as *;
+
+body>* {
+	// border: 1px solid #000;
+}
+
+// html {
+//     // ~375px
+//     @media (max-width: 375px) {
+//         font-size: vw(375, 16);
+//     }
+
+//     // 375~787px
+//     font-size: 16px;
+
+//     @include mq("md") {
+//         font-size: vw(strip-unit($inner), 16);
+//     }
+
+//     // inner~max-screen
+//     @media (min-width: $inner) {
+//         font-size: 16px;
+//     }
+// }
+
+// body {
+//   --sb-track-color: #d9d9d9;
+//   --sb-thumb-color: #f45f5f;
+//   --sb-size: 20px;
+
+//   scrollbar-color: var(--sb-thumb-color);
+//                   var(--sb-track-color);
+// }
+
+
+
+
+// /* Chrome用のベンダープレフィックス */
+// body::-webkit-scrollbar {
+//   width: var(--sb-size);
+// }
+
+// body::-webkit-scrollbar-track {
+//   background: var(--sb-track-color);
+//   border-radius: 10px;
+// }
+
+// body::-webkit-scrollbar-thumb {
+//   background: var(--sb-thumb-color);
+//   border-radius: 10px;
+// }

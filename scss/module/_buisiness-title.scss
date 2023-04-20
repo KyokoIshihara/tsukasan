@@ -1,0 +1,34 @@
+@use "../global" as *;
+
+.buisiness-title {
+    justify-content: flex-start;
+
+    @include mq("md") {
+        flex-direction: row;
+        gap: rem(109);
+        margin-bottom: rem(80);
+    }
+
+
+}
+
+.buisiness-title__images {
+
+    @include mq("md") {
+        width: calc(540px / $inner * 100%);
+        height: calc(142px / $inner * 100%);
+        margin-bottom: rem(9);
+    }
+}
+
+.buisiness-title img {
+    aspect-ratio: 336/101;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+
+    @include mq("md") {
+        aspect-ratio: 540/142;
+    }
+}

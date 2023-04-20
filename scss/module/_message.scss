@@ -1,0 +1,114 @@
+@use "../global" as *;
+
+.message__inner {
+    @include mq("md") {
+        padding-left: calc($padding-pc *2);
+
+    }
+}
+
+.message__items {
+    display: flex;
+    flex-direction: column;
+
+    @include mq("md") {
+        // height: rem(445);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+        z-index: -1;
+        gap: 20px$padding-pc;
+        margin-top: max(vw(1366, -95), -95px);
+    }
+}
+
+// .message__images-container{
+//     display: flex;
+//     justify-content: flex-end;
+//     width: 100%;
+//     @include mq("md"){
+//         // width: 60%;
+//         width: min(vw(1366, 712) 712px);
+//     }
+// }
+
+.message__images {
+    position: relative;
+    border-radius: 0 17% 0 0;
+    margin-bottom: min(vw(375, 50.81), 50.81px);
+    margin-left: max(vw(375, 12), 12px);
+    // display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include mq("md") {
+        width: calc(712px / $inner * 100%);
+        margin: 0;
+        box-shadow: none;
+        margin-left: 0;
+    }
+}
+
+.message__images img {
+    // width: min(vw(375, 331), 331px);
+    width: 100%;
+    // height: min(vw(375, 205), 205px);
+    height: 100%;
+    display: block;
+    aspect-ratio: 331/205;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0 25% 0 0;
+
+    // mix-blend-mode: normal;
+    // vertical-align: bottom;
+    @include mq("md") {
+        aspect-ratio: 712/445;
+
+        // width: min(vw(1366, 712), 712px);
+        // max-width: 100%;
+        // height: min(vw(1366, 445), 445px);
+
+    }
+}
+
+// 画像の後ろの影
+.message__images::before {
+    content: "";
+    display: inline-block;
+    // width: min(vw(375, 325), 325px);
+    width: 95%;
+    // height: min(vw(375, 205), 205px);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $sub-color;
+    border-radius: 0 17% 0 0;
+    transform: translate(-6px, 0px) rotate(-4deg);
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+
+    @include mq("md") {
+        width: 100%;
+        transform: translate(-15px, 0px) rotate(-4deg);
+    }
+
+}
+
+
+.message__sentence {
+    font-size: rem(16);
+    line-height: calc(28 / 16);
+    margin-bottom: rem(-8);
+
+    @include mq("md") {
+        // font-size: min(vw(1366, 16), 16px);
+        // width: min(vw(1366, 259), 259px);
+        // width: calc(259px / $inner * 100%);
+        width: 259px;
+        line-height: calc(26 / 16);
+        // font-size: min(vw(1366, 16), 16px);
+        // font-size: rem(16);
+    }
+}
