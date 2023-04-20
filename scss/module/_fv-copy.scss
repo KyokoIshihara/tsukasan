@@ -6,8 +6,8 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
+    overflow: hidden;
     @include mq("md"){
-        // max-height: 677px;
         max-height: 645px;
         height: 100%;
         justify-content: space-between;
@@ -30,33 +30,26 @@
     padding-top: 31px;
     padding-bottom: 37px;
     padding-right: vw(375, 15);
-    overflow: hidden;
     @include mq("md"){
         width: vw(1366, 1196);
         height: vw(1366, 645);
-        // max-height: 100%;
         padding-top: 0;
-        // padding-bottom: 0;
         padding-right: 0;
         align-items: flex-start;
         justify-content: flex-end;
-        // padding-left: vw(1366, 119)
         padding-bottom: min(vw(1366, 22), 22px);
 
     }
 }
 
 .fv-copy{
-    // display: block;
     font-size: vw(375, 100);
     display: inline-block;
     vertical-align: bottom; 
     font-weight: bold;
     color: $main-color;
     margin-top: -7px;
-    // font-feature-settings: "palt";
     line-height: 1;
-    // margin-top: -6px;
     @include mq("md"){
         font-feature-settings: initial;
         font-size: min(120px, vw(1366, 120));
@@ -64,60 +57,34 @@
     }
 }
 
-// .fv-copy::after{
-//     content: "";
-//     display: block;
-//     width: 100%;
-//     height: 2px;
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     // vertical-align: middle;
-// }
-
 .fv-copy__pc-only {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    // height: calc(323px / 585px * 100%);
     height: 60.9%;
     @include mq("md"){
         flex-direction: row;
-        // height: calc(119px / 645px * 100
         height: min(vw(1366, 119),119px);
-        // width: vw(1366, 639);
-
-        // position: absolute;
-        // bottom: 18px;
-        // left: calc(123px / 1366px * 100%);
-        // left: 4px;
     }
 }
 
 
 .fv-copy1{
-    display: block;
+    display: inline-block;
     letter-spacing: 0.2em;
     margin-right: -0.4em;
     transform: translate(-6%, 1%);
-    // text-align: justify;
     @include mq("md"){
         writing-mode: vertical-rl;
         letter-spacing: 0.14em;
         margin: 0;
         transform: translateY(8px);
-        // position: absolute;
-        // left: calc(123px / 1366px * 100%);
-        // left: 4px;
-        // bottom: 0;
-        // transform: translateY(-33%);
     }
 }
 
-// .fv-copy1::after {
-//     content: "";
-//     display: inline-block;
-//     width: 100%;
+// .fv-copy1::first-letter {
+//     font-size: vw(375, 102);
 // }
 
 .fv-copy2{

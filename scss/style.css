@@ -492,6 +492,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .fv-copy__container {
@@ -513,7 +514,6 @@ body {
   padding-top: 31px;
   padding-bottom: 37px;
   padding-right: 4vw;
-  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .fv-copies {
@@ -558,7 +558,7 @@ body {
 }
 
 .fv-copy1 {
-  display: block;
+  display: inline-block;
   letter-spacing: 0.2em;
   margin-right: -0.4em;
   transform: translate(-6%, 1%);
