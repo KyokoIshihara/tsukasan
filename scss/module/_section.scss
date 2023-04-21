@@ -81,7 +81,7 @@
 
 // PickUP
 .section__pickup {
-    margin-bottom: max(vw(375, 30), rem(30));
+    margin-bottom: max(vw(375, 30.04), rem(30.04));
     @include mq("md"){
         margin-bottom: min(vw(1366, 80), rem(80));
     }

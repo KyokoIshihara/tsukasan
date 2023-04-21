@@ -25,8 +25,8 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-bottom: min(vw(375, 40), 40px);
-    padding-left: min(vw(375, 20), 20px);
+    margin-bottom: min(vw(375, 40), rem(40));
+    padding-left: min(vw(375, 20), rem(20));
 
     @include mq("md") {
         // width: min(vw(1366, 24), rem(24)); 

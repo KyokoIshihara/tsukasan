@@ -10,9 +10,9 @@
 }
 
 .color-title__images {
-    width: vw(385, 208);
-    height:vw(385, 87);
-    margin-bottom: max(vw(375, 17), rem(17));
+    width: vw(375, 208);
+    height:vw(375, 87);
+    margin-bottom: max(vw(375, 16), rem(16));
 
     @include mq("md") {
         width: calc(354px / $inner * 100%);

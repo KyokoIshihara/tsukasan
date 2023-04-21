@@ -3,7 +3,7 @@
 .pickup__inner {
     position: relative;
     padding-top: max(vw(375, 92), rem(92));
-    padding-bottom: max(vw(375, 154), rem(154));
+    padding-bottom: max(vw(375, 155), rem(155));
 
     @include mq("md") {
         padding-top: rem(181);
@@ -30,7 +30,6 @@
     height: 1px;
     background-color: $main-color;
     position: absolute;
-    // top: calc(40px / 683px * 100%);
     top: calc(39px / 740px * 100%);
     right: 0;
 
