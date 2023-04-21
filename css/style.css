@@ -753,7 +753,7 @@ body {
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  bottom: 584px;
+  bottom: 504px;
   left: 0;
   z-index: -99;
 }
@@ -1144,7 +1144,7 @@ body {
 }
 
 .buisiness__item:not(:last-of-type) {
-  margin-bottom: 5rem;
+  margin-bottom: 5.0625rem;
 }
 
 .buisiness__item > * {
@@ -1159,7 +1159,7 @@ body {
 }
 
 .buisiness__images {
-  border-radius: 0 15% 0 0;
+  border-radius: 0 16% 0 0;
   width: 100%;
   aspect-ratio: 343/257;
   position: relative;
@@ -1178,7 +1178,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 343/257;
-  border-radius: 0 15% 0 0;
+  border-radius: 0 16% 0 0;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -1230,7 +1230,7 @@ body {
 
 .buisiness-title {
   justify-content: flex-start;
-  margin-bottom: 0;
+  margin-bottom: 0.0625rem;
 }
 @media screen and (min-width: 768px) {
   .buisiness-title {
@@ -1298,7 +1298,7 @@ body {
   height: 1px;
   background-color: #F45F5F;
   position: absolute;
-  top: 5.5636896047%;
+  top: 5.2702702703%;
   right: 0;
 }
 @media screen and (min-width: 768px) {
@@ -1378,7 +1378,7 @@ body {
   height: 1px;
   background-color: #F45F5F;
   position: absolute;
-  top: -11px;
+  top: -10px;
   left: 0;
 }
 
@@ -1413,7 +1413,7 @@ body {
 .pickup-title__images {
   width: 78.9333333333vw;
   height: 26.9333333333vw;
-  margin-bottom: min(2.4vw, 0.5625rem);
+  margin-bottom: min(1.8666666667vw, 0.4375rem);
 }
 @media screen and (min-width: 768px) {
   .pickup-title__images {
@@ -1481,12 +1481,15 @@ body {
 
 .basic-button__link {
   font-size: max(4.2666666667vw, 1rem);
-  padding-top: max(6.1333333333vw, 1.4375rem);
-  padding-bottom: max(5.8666666667vw, 1.375rem);
+  padding-top: max(6.6666666667vw, 1.5625rem);
+  padding-bottom: max(5.6vw, 1.3125rem);
   border: 1px solid #333333;
   width: 100%;
   height: 100%;
   transition: transform 0.3s ease;
+  padding-left: max(2.6666666667vw, 0.625rem);
+  display: flex;
+  align-items: flex-end;
 }
 @media screen and (min-width: 768px) {
   .basic-button__link {
@@ -1499,13 +1502,17 @@ body {
 }
 
 .basic-button__link::after {
-  width: max(4vw, 0.9375rem);
-  height: max(3.4666666667vw, 0.8125rem);
+  width: max(4.2666666667vw, 1rem);
+  height: max(4.5333333333vw, 1.0625rem);
+  margin-right: max(-2.9333333333vw, -0.6875rem);
+  margin-left: max(3.7333333333vw, 0.875rem);
 }
 @media screen and (min-width: 768px) {
   .basic-button__link::after {
     width: min(1.5373352855vw, 1.3125rem);
     height: min(1.317715959vw, 1.125rem);
+    margin-right: un;
+    margin-left: inherit;
   }
 }
 

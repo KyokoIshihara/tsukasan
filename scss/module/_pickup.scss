@@ -30,7 +30,8 @@
     height: 1px;
     background-color: $main-color;
     position: absolute;
-    top: calc(38px / 683px * 100%);
+    // top: calc(40px / 683px * 100%);
+    top: calc(39px / 740px * 100%);
     right: 0;
 
     @include mq("md") {
@@ -110,7 +111,7 @@
     height: 1px;
     background-color: $main-color;
     position: absolute;
-    top: -11px;
+    top: -10px;
     left: 0;
 }
 

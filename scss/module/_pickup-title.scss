@@ -14,7 +14,7 @@
 .pickup-title__images {
     width: vw(375, 296);
     height: vw(375, 101);
-    margin-bottom: min(vw(375, 9), rem(9));
+    margin-bottom: min(vw(375, 7), rem(7));
 
     @include mq("md") {
         all: unset;

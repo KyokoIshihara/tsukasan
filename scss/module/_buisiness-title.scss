@@ -2,7 +2,7 @@
 
 .buisiness-title {
     justify-content: flex-start;
-    margin-bottom: 0;
+    margin-bottom: rem(1);
 
     @include mq("md") {
         flex-direction: row;
