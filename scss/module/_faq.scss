@@ -60,21 +60,25 @@
 
 
 .faq__title {
-    font-size: rem(13);
-    font-size: max(vw(375, 13), rem(13));
-    // line-height: 136%;
-    // margin-bottom: rem(20);
     display: flex;
     align-items: flex-start;
     cursor: pointer;
     padding-bottom: max(vw(375, 10), rem(10));
     position: relative;
     @include mq("md"){
-        font-size: rem(24);
         padding-bottom: min(vw(1366, 9), rem(9));
         align-items: center;
     }
 }
+
+.faq__title p {
+    font-size: max(vw(375, 13), rem(13));
+    @include mq("md"){
+        font-size: rem(24);
+    }
+}
+
+
 // 破線
 .faq__title::after{
     content: "";
@@ -93,7 +97,6 @@
 }
 
 .faq__description {
-    font-size: rem(13);
     display: flex;
     align-items: flex-start;
     position: relative;
@@ -102,11 +105,17 @@
     display: none;
     @include mq("md"){
         width: calc(986px / $inner * 100%);
-        font-size: rem(16);
         margin-top: min(vw(1366, 40), rem(40));
         padding-bottom: min(vw(1366, 10), rem(10));
         margin-bottom: min(vw(1366, 20), rem(20));
         margin-left: min(vw(1366, 40), rem(40));
+    }
+}
+
+.faq__description p {
+    font-size: max(vw(375, 13), rem(13));
+    @include mq("md"){
+        font-size: rem(16);
     }
 }
 

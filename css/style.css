@@ -863,34 +863,17 @@ body {
 
 .section__faq {
   margin-bottom: 0;
+  width: 100%;
+  max-width: 1366px;
+  background-color: #F4F4F4;
+  height: 100%;
+  border-radius: 0 0 40px 40px;
+  max-width: 1366px;
+  padding-top: 4.875rem;
+  padding-bottom: 5rem;
 }
 @media screen and (min-width: 768px) {
   .section__faq {
-    position: relative;
-    height: -moz-fit-content;
-    height: fit-content;
-    overflow: hidden;
-  }
-}
-
-.section__faq::before {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .section__faq::before {
-    content: "";
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 1366px;
-    max-width: 1366px;
-    height: 100%;
-    display: inline-block;
-    background-color: #F4F4F4;
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    transform: translate(-50%, 0px);
     border-radius: 0 0 15% 15%;
   }
 }
@@ -2047,7 +2030,7 @@ body {
   background-image: url(../images/voice-arrow-prev.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 44.056vw;
+  top: 47.2vw;
 }
 @media screen and (min-width: 768px) {
   .voice__slide-prev {
@@ -2061,7 +2044,7 @@ body {
   background-image: url(../images/voice-arrow-next.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  top: 44.056vw;
+  top: 47.2vw;
 }
 @media screen and (min-width: 768px) {
   .voice__slide-next {
@@ -2208,6 +2191,7 @@ body {
   width: 59.8986666667vw;
   height: 31.5226666667vw;
   margin-bottom: -3.68125rem;
+  margin-left: 4.2666666667vw;
 }
 @media screen and (min-width: 768px) {
   .voice-title__images {
@@ -2245,13 +2229,16 @@ body {
   }
 }
 
+.flow-title__text {
+  padding-left: 0;
+  margin-bottom: 2.375rem;
+}
 @media screen and (min-width: 768px) {
   .flow-title__text {
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-size: 1rem;
     margin-bottom: 0;
-    padding-left: 0;
   }
 }
 
@@ -2268,7 +2255,7 @@ body {
 
 .flow__inner {
   position: relative;
-  padding-bottom: max(20.256vw, 4.7475rem);
+  padding-bottom: max(21.3226666667vw, 4.9975rem);
 }
 @media screen and (min-width: 768px) {
   .flow__inner {
@@ -2324,7 +2311,7 @@ body {
 }
 
 .flow__list {
-  width: 89.3333333333%;
+  width: max(85.0666666667vw, 19.9375rem);
   border-left: 1px solid #F45F5F;
   position: relative;
   padding-left: 11.2vw;
@@ -2349,13 +2336,14 @@ body {
   color: #F45F5F;
   border-radius: 50%;
   font-family: "Noto Sans", sans-serif;
-  font-size: max(4.8vw, 1.125rem);
+  font-size: max(5.3333333333vw, 1.25rem);
   font-weight: bold;
   line-height: 12.2666666667vw;
+  letter-spacing: 1.8px;
   text-align: center;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -1px;
   transform: translateX(-50%);
 }
 @media screen and (min-width: 768px) {
@@ -2396,8 +2384,8 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 9.866667vw;
-  left: 3.733333vw;
+  top: 10.366667vw;
+  left: 3.233333vw;
   transform: rotate(45deg);
 }
 @media screen and (min-width: 768px) {
@@ -2436,6 +2424,7 @@ body {
   background-size: contain;
   vertical-align: middle;
   margin-left: 2.6666666667vw;
+  margin-top: 4px;
 }
 @media screen and (min-width: 768px) {
   .flow__title::after {
@@ -2445,9 +2434,10 @@ body {
 }
 
 .flow__description {
-  width: 73.8666666667%;
+  width: 100%;
   margin-bottom: max(10.6666666667vw, 2.5rem);
   font-size: 1rem;
+  line-height: 175%;
 }
 @media screen and (min-width: 768px) {
   .flow__description {
@@ -2519,8 +2509,6 @@ body {
 }
 
 .faq__title {
-  font-size: 0.8125rem;
-  font-size: max(3.4666666667vw, 0.8125rem);
   display: flex;
   align-items: flex-start;
   cursor: pointer;
@@ -2529,9 +2517,17 @@ body {
 }
 @media screen and (min-width: 768px) {
   .faq__title {
-    font-size: 1.5rem;
     padding-bottom: min(0.6588579795vw, 0.5625rem);
     align-items: center;
+  }
+}
+
+.faq__title p {
+  font-size: max(3.4666666667vw, 0.8125rem);
+}
+@media screen and (min-width: 768px) {
+  .faq__title p {
+    font-size: 1.5rem;
   }
 }
 
@@ -2554,7 +2550,6 @@ body {
 }
 
 .faq__description {
-  font-size: 0.8125rem;
   display: flex;
   align-items: flex-start;
   position: relative;
@@ -2565,11 +2560,19 @@ body {
 @media screen and (min-width: 768px) {
   .faq__description {
     width: 96.1013645224%;
-    font-size: 1rem;
     margin-top: min(2.9282576867vw, 2.5rem);
     padding-bottom: min(0.7320644217vw, 0.625rem);
     margin-bottom: min(1.4641288433vw, 1.25rem);
     margin-left: min(2.9282576867vw, 2.5rem);
+  }
+}
+
+.faq__description p {
+  font-size: max(3.4666666667vw, 0.8125rem);
+}
+@media screen and (min-width: 768px) {
+  .faq__description p {
+    font-size: 1rem;
   }
 }
 
@@ -2615,7 +2618,7 @@ body {
 
 .faq-title__images {
   width: 42.4vw;
-  margin-bottom: max(5.3333333333vw, 1.25rem);
+  margin-bottom: max(4.2666666667vw, 1rem);
 }
 @media screen and (min-width: 768px) {
   .faq-title__images {

@@ -172,30 +172,40 @@
 // FAQ
 .section__faq {
     margin-bottom: 0;
+    width: 100%;
+    max-width: 1366px;
+    background-color: $sub-background;
+    height: 100%;
+    border-radius: 0 0 40px 40px;
+    // height: fit-content;
+    max-width: 1366px;
+    padding-top: rem(78);
+    padding-bottom: rem(80);
     @include mq("md"){
-        position: relative;
-        height: fit-content;
-        overflow: hidden;
+        border-radius: 0 0 15% 15%;
+        // position: relative;
+        // overflow: hidden;
     }
 }
 
 .section__faq::before{
-    display: none;
+    // content: "";
+    // width: 100vw;
+    // max-width: 1366px;
+    // border-radius: 0 0 15% 15%;
+    // display: block;
+    // height: 100%;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // max-width: 1366px;
+    // background-color: $sub-background;
+    // display: none;
     @include mq("md"){
-        content: "";
-        display: inline-block;
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 1366px;
-        max-width: 1366px;
-        height: 100%;
-        display: inline-block;
-        background-color: $sub-background;
-        position: absolute;
-        z-index: -1;
-        left: 50%;
-        transform: translate(-50%, 0px);
-        border-radius: 0 0 15% 15%;
+        // display: inline-block;
+        // position: absolute;
+        // z-index: -1;
+        // left: 50%;
+        // transform: translate(-50%, 0px);
     }
 
 }

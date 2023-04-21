@@ -93,7 +93,7 @@
     background-image:url(../images/voice-arrow-prev.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    top: vw(375, 165.21);
+    top: vw(375, 177);
     @include mq("md"){
         display: none;
     }
@@ -105,7 +105,7 @@
     background-image:url(../images/voice-arrow-next.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    top: vw(375, 165.21);
+    top: vw(375, 177);
     @include mq("md"){
         display: none;
     }
@@ -124,7 +124,6 @@
     margin: 0 auto;
     aspect-ratio: 287/287.8;
     @include mq("md"){
-        // width: rem(220);
         width: min(vw(1366, 220), rem(220));
         margin: 0;
     }

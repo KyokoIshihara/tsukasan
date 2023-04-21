@@ -21,12 +21,13 @@
 }
 
 .flow-title__text {
+    padding-left: 0;
+    margin-bottom: rem(38);
     @include mq("md") {
         writing-mode: vertical-rl;
         text-orientation: upright;
         font-size: rem(16);
         margin-bottom: 0;
-        padding-left: 0;
     }
 }
 

@@ -14,10 +14,8 @@
 
 .faq-title__images {
     width: vw(375, 159);
-
-    margin-bottom: max(vw(375, 20), rem(20));
+    margin-bottom: max(vw(375, 16), rem(16));
     @include mq("md") {
-        
         width: 100%;
         height: unset;
         margin-bottom: rem(20);

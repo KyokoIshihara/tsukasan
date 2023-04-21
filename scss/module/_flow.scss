@@ -2,7 +2,7 @@
 
 .flow__inner {
     position: relative;
-    padding-bottom: max(vw(375, 75.96), rem(75.96));
+    padding-bottom: max(vw(375, 79.96), rem(79.96));
     @include mq("md") {
         padding-bottom: min(vw(1366, 77.66), rem(77.66));
         position: relative;
@@ -59,7 +59,7 @@
 }
 
 .flow__list {
-        width: calc(335px / 375px * 100%);
+        width: max(vw(375, 319), rem(319));
         border-left: 1px solid $main-color;
         position: relative;
         padding-left: vw(375, 42) ;
@@ -83,13 +83,14 @@
     color: $main-color;
     border-radius: 50%;
     font-family: $sub-font;
-    font-size: max(vw(375, 18), rem(18));
+    font-size: max(vw(375, 20), rem(20));
     font-weight: bold;
     line-height: vw(375, 46);
+    letter-spacing: 1.8px;
     text-align: center;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -1px;
     transform: translateX(-50%);
     @include mq("md"){
         width: min(vw(1366, 100), rem(100));
@@ -114,8 +115,7 @@
 .flow__list:nth-of-type(6)::before {
     content: "06";
 }
-
-
+    // 
 .flow__list::after{
     content: "";
     display: inline-block;
@@ -125,8 +125,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top: 9.866667vw;
-    left: 3.733333vw;
+    top: 10.366667vw;
+    left: 3.233333vw;
     transform: rotate(45deg);
     @include mq("md"){
         width: min(vw(1366, 13.5), rem(13.5));
@@ -164,6 +164,7 @@
     background-size: contain;
     vertical-align: middle;
     margin-left: vw(375, 10);
+    margin-top: 4px;
     @include mq("md"){
         width: min(vw(1366, 32), rem(32));
         margin-left: min(vw(1366, 14.58), rem(14.58));
@@ -173,9 +174,10 @@
 }
 
 .flow__description {
-    width: calc(277px / 375px * 100%);
+    width: 100%;
     margin-bottom: max(vw(375, 40), rem(40));
     font-size: rem(16);
+    line-height: 175%;
     @include mq("md"){
         width: min(vw(1366, 454), rem(454));
         // font-size: min(vw(1366, 16), rem(16));
