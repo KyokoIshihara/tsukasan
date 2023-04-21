@@ -88,6 +88,7 @@ $mediaquerys: (
 
 // モバイルのみ表示
 .sp_only {
+    display: block;
     @include mq("md") {
         display: none;
     }

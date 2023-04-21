@@ -3,7 +3,7 @@
 
 .jobinfo__inner {
     padding-top: max(vw(375, 78), rem(78));
-    padding-bottom: max(vw(375, 236), rem(236));
+    padding-bottom: max(vw(375, 228), rem(228));
 
     @include mq("md") {
         padding-top: rem(141);
@@ -16,7 +16,7 @@
 .jobinfo__inner::before{
     content: "";
     display: inline-block;
-    width: calc(81px / 343px * 100% + 50vw);
+    width: calc(20.3% + 50vw);
     height: max(vw(375, 745), rem(745));
     background-color: $sub-background;
     background-repeat: no-repeat;
@@ -36,8 +36,10 @@
 .jobinfo__inner::after{
     content: "";
     display: inline-block;
-    width: calc(171px / 343px * 100%);
-    height: calc(159px / 343px * 100%);
+    width: vw(375, 171);
+    // width: calc(171px / 343px * 100%);
+    height: vw(375, 159);
+    // height: calc(159px / 343px * 100%);
     background-image:url(../images/jobinfo-logo-SP.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,12 +78,9 @@
 .jobinfo__list {
     display: flex;
     flex-direction: row;
-    font-size: max(vw(375, 13), rem(13));
-    padding-bottom: max(vw(375, 20), rem(20));
+    padding-bottom: max(vw(375, 21), rem(21));
     position: relative;
-    
     @include mq("md") {
-        font-size: min(vw(1366, 16), rem(16));
         padding-bottom: rem(40);
 
     }
@@ -109,7 +108,7 @@
 }
 
 .jobinfo__list + .jobinfo__list {
-    margin-top: max(vw(375, 19), rem(19));
+    margin-top: max(vw(375, 22), rem(22));
     
     @include mq("md") {
         margin-top: rem(40);
@@ -121,19 +120,23 @@
 .joblist__title {
     font-weight: bold;
     width: calc(95px / 343px * 100%);
-    
+    font-size: max(vw(375, 13), rem(13));
+    line-height: 135%;
     @include mq("md") {
         width: calc(240px / 864px * 100%);
-        
+        font-size: min(vw(1366, 16), rem(16));
     }
     
 }
 
 .joblist__description {
     width: calc(248px / 343px * 100%);
-    
+    font-size: max(vw(375, 13), rem(13));
+    line-height: 135%;
     @include mq("md") {
         width: calc(624px / 864px * 100%);
+        font-size: min(vw(1366, 16), rem(16));
+
     }
 }
 

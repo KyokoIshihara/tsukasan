@@ -14,7 +14,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: rem(80);
+    // margin-bottom: rem(80);
 
     @include mq("md") {
         grid-column-gap: calc(39px / $inner * 100%);
@@ -129,14 +129,14 @@
 .color__item-container2 .color__item:nth-of-type(4) {
     order: 5;
     border: none;
+    padding-top: max(vw(375, 61), rem(61));
     padding-bottom: 0;
-    margin-bottom: max(vw(375, 80), rem(80));
-
+    margin-bottom: max(vw(375, 81), rem(81));
     @include mq("md") {
+        padding-top: unset;
         margin-bottom: 0;
         order: unset;
     }
-
 }
 
 .color__item+.color__item {
@@ -149,8 +149,16 @@
 
 .color__item-title {
     margin-bottom: max(vw(375, 39), rem(39));
+    container-type: inline-size;
     @include mq("md") {
         margin-top: 0;
+    }
+}
+// 310px-358pxの時だけ改行
+.color__sp_only {
+    display: none;
+    @container (310px <= width < 358px) {
+        display: block;
     }
 }
 
@@ -179,6 +187,7 @@
     font-weight: bold;
     letter-spacing: calc(2.4 / 13 * 1rem);
 }
+
 
 .color__images {
     width: 100%;

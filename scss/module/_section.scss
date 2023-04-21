@@ -95,7 +95,7 @@
 // JobInfo
 .section__jobinfo {
     position: relative;
-    margin-bottom: max(vw(375, 30.23), rem(30.23));
+    margin-bottom: max(vw(375, 65), rem(65));
     @include mq("md"){
         margin-bottom: min(vw(1366, 59.23), rem(59.23));
     }

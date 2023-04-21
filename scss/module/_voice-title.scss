@@ -2,6 +2,7 @@
 
 .voice-title {
     margin-top: rem(-59);
+    margin-bottom: 0;
     position: relative;
     z-index: 1;
     @include mq("md"){

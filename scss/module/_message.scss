@@ -10,7 +10,7 @@
 .message__items {
     display: flex;
     flex-direction: column;
-    padding-bottom: vw(375, 10);
+    padding-bottom: vw(375, 8);
 
     @include mq("md") {
         // height: rem(445);

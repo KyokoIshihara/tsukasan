@@ -1,7 +1,8 @@
 @use "../global" as *;
 
 .voice__inner {
-    padding-top: max(vw(375, 61.1), rem(61.1));
+    padding-top: max(vw(375, 21.1), rem(21.1));
+    padding-top: 0;
     padding-bottom: max(vw(375, 92), rem(92));
     padding-left: 0;
     padding-right: 0;
