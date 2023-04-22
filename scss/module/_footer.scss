@@ -74,8 +74,16 @@
 .footer__conpany-address {
     // margin-bottom: rem(20);
     margin-bottom: vw(375, 20);
+    font-size: rem(13);
     @include mq("md"){
         margin-bottom: rem(14);
+        font-size: rem(16);
     }
 }
 
+.footer_company-telephone {
+    font-size: rem(13);
+    @include mq("md"){
+        font-size: rem(16);
+    }
+}
