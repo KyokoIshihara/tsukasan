@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .entry-title {
-    margin-bottom: max(vw(375, 40), rem(40));
+    margin-bottom: max(vw(375, 39), rem(39));
 
     @include mq("md") {
         // flex-direction: row;
@@ -14,7 +14,7 @@
 .entry-title__images {
     width: vw(375, 211.09);
     height: vw(375, 89);
-    margin-bottom: max(vw(375, 20), rem(20));
+    margin-bottom: max(vw(375, 18), rem(18));
 
     @include mq("md") {
         width: calc(382px / $inner * 100%);

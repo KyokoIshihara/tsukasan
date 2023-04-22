@@ -691,7 +691,7 @@
                 <label class="entry-form__label entry-form__label--required" for="entry-address">住所<span>必須</span></label>
                 <div class="entry-form__input-container">
                   <input class="entry-form__input entry-form__input--postal-code p-postal-code" id="postal_code" type="text" name="郵便番号"required/>
-                  <label class="entry-form__example" for="postal_code"><span>例）〒111-1111</span></label>
+                  <label class="entry-form__example" for="postal_code">例）〒111-1111</label>
                   <textarea class="entry-form__input entry-form__input--address p-region p-locality p-street-address p-extended-address" id="entry-address" type="text" name="住所" rows="3" required></textarea>
                   <label class="entry-form__example" for="entry-address">例）福岡県〇〇市〇〇1-1-1　〇〇コーポ111</label>
                 </div>
@@ -723,6 +723,7 @@
                   <textarea class="entry-form__input entry-form__description" id="inquiry" name="お問合せ内容" rows="6"></textarea>
                 </div>
               </div>
+              <!-- プライバシーチェック項目 -->
               <p class="privacy__description">ご送信の前に、必ず <span data-micromodal-trigger="modal-1" class="privacy__link modal-open">｢プライバシーポリシー｣</span> をお読みのうえ、ご同意願います。</p>
               <div class="privacy__container">
                 <input class="privacy__checkbox" type="checkbox" id="privacy_checkbox" name="個人情報の取り扱いについての同意[]"/>

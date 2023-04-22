@@ -4,7 +4,7 @@
 .entry-form__field {
     display: flex;
     flex-direction: column;
-    margin-bottom: rem(20);
+    margin-bottom: rem(18);
     @include mq("md"){
         flex-direction: row;
         justify-content: space-between;
@@ -12,11 +12,18 @@
     }
 }
 
+.entry-form__field--textarea {
+    margin-bottom: rem(35);
+    @include mq("md"){
+        
+    }
+}
+
 .entry-form__label {
     font-size: rem(13);
     font-weight: bold;
     color: #1A1A1A;
-    margin-bottom: rem(20);
+    margin-bottom: rem(19);
     @include mq("md"){
         font-size: rem(16);
         margin-bottom: 0;
@@ -77,10 +84,11 @@
 }
 
 .entry-form__example {
-    font-size: rem(13);
     color: #9B9B9B;
+    font-size: rem(13);
     margin-bottom: rem(20);
-    
 }
 
+// .entry-form__example span {
+// }
 

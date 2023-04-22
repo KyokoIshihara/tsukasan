@@ -2839,7 +2839,7 @@ body {
 }
 
 .entry-title {
-  margin-bottom: max(10.6666666667vw, 2.5rem);
+  margin-bottom: max(10.4vw, 2.4375rem);
 }
 @media screen and (min-width: 768px) {
   .entry-title {
@@ -2852,7 +2852,7 @@ body {
 .entry-title__images {
   width: 56.2906666667vw;
   height: 23.7333333333vw;
-  margin-bottom: max(5.3333333333vw, 1.25rem);
+  margin-bottom: max(4.8vw, 1.125rem);
 }
 @media screen and (min-width: 768px) {
   .entry-title__images {
@@ -2874,7 +2874,7 @@ body {
 .entry-form__field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.125rem;
 }
 @media screen and (min-width: 768px) {
   .entry-form__field {
@@ -2884,11 +2884,14 @@ body {
   }
 }
 
+.entry-form__field--textarea {
+  margin-bottom: 2.1875rem;
+}
 .entry-form__label {
   font-size: 0.8125rem;
   font-weight: bold;
   color: #1A1A1A;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.1875rem;
 }
 @media screen and (min-width: 768px) {
   .entry-form__label {
@@ -2958,15 +2961,15 @@ body {
 }
 
 .entry-form__example {
-  font-size: 0.8125rem;
   color: #9B9B9B;
+  font-size: 0.8125rem;
   margin-bottom: 1.25rem;
 }
 
 .privacy__description {
   display: inline-block;
   font-size: 0.8125rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5625rem;
 }
 @media screen and (min-width: 768px) {
   .privacy__description {
@@ -2999,6 +3002,10 @@ body {
     text-underline-offset: 7px;
     font-size: clamp(0.8125rem, 1.1713030747vw, 1rem);
   }
+}
+
+.privacy__checkbox {
+  transform: scale(1.5);
 }
 
 .privacy__checkbox--sentence {

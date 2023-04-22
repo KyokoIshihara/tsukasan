@@ -3,7 +3,7 @@
 .privacy__description {
     display: inline-block;
     font-size: rem(13);
-    margin-bottom: rem(20);
+    margin-bottom: rem(25);
     @include mq("md"){
         width: 100%;
         font-size: clamp(rem(13), vw(1366, 16), rem(16));
@@ -34,7 +34,7 @@
 }
 
 .privacy__checkbox {
-
+    transform: scale(1.5);
 }
 
 .privacy__checkbox--sentence {
