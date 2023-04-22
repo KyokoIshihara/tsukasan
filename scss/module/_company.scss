@@ -37,12 +37,12 @@
     display: flex;
     flex-direction: row;
     // font-size: rem(13);
-    font-size: max(vw(375, 13), rem(13));
-    padding-bottom: max(vw(375, 20), rem(20));
+    // font-size: max(vw(375, 13), rem(13));
+    padding-bottom: max(vw(375, 22), rem(22));
     position: relative;
     
     @include mq("md") {
-        font-size: min(vw(1366, 16), rem(16));
+        // font-size: min(vw(1366, 16), rem(16));
         // font-size: rem(16);
         padding-bottom: rem(40);
 
@@ -70,7 +70,7 @@
 }
 
 .company__list + .company__list {
-    margin-top: max(vw(375, 19), rem(19));
+    margin-top: max(vw(375, 20), rem(20));
     
     @include mq("md") {
         margin-top: rem(40);
@@ -80,11 +80,14 @@
 }
 
 .company__title {
+    font-size: max(vw(375, 13), rem(13));
+    
     font-weight: bold;
     width: calc(95px / 343px * 100%);
-    
+    line-height: 136%;
     @include mq("md") {
         width: calc(240px / 864px * 100%);
+        font-size: rem(16);
         
     }
     
@@ -92,9 +95,11 @@
 
 .company__description {
     width: calc(248px / 343px * 100%);
-    
+    font-size: max(vw(375, 13), rem(13));
+    line-height: 136%;
     @include mq("md") {
         width: calc(624px / 864px * 100%);
+        font-size: rem(16);
     }
 }
 

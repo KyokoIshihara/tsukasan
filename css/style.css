@@ -862,7 +862,7 @@ body {
 }
 
 .section__faq {
-  margin-bottom: 0;
+  margin-bottom: 5rem;
   width: 100%;
   max-width: 1366px;
   background-color: #F4F4F4;
@@ -910,7 +910,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   background-image: radial-gradient(rgba(244, 95, 95, 0.6784313725) 2px, transparent 2px);
-  background-size: 23.94px 23.94px;
+  background-size: 23.94px 21.34px;
+  background-position: -2.3% -0.4%;
   background-color: #F4F4F4;
   margin-bottom: 0;
 }
@@ -2448,7 +2449,7 @@ body {
 }
 
 .faq__inner {
-  padding-bottom: min(42.6666666667vw, 10rem);
+  padding-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .faq__inner {
@@ -2531,7 +2532,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .faq__title p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -2716,13 +2717,11 @@ body {
 .company__list {
   display: flex;
   flex-direction: row;
-  font-size: max(3.4666666667vw, 0.8125rem);
-  padding-bottom: max(5.3333333333vw, 1.25rem);
+  padding-bottom: max(5.8666666667vw, 1.375rem);
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .company__list {
-    font-size: min(1.1713030747vw, 1rem);
     padding-bottom: 2.5rem;
   }
 }
@@ -2749,7 +2748,7 @@ body {
 }
 
 .company__list + .company__list {
-  margin-top: max(5.0666666667vw, 1.1875rem);
+  margin-top: max(5.3333333333vw, 1.25rem);
 }
 @media screen and (min-width: 768px) {
   .company__list + .company__list {
@@ -2758,21 +2757,27 @@ body {
 }
 
 .company__title {
+  font-size: max(3.4666666667vw, 0.8125rem);
   font-weight: bold;
   width: 27.6967930029%;
+  line-height: 136%;
 }
 @media screen and (min-width: 768px) {
   .company__title {
     width: 27.7777777778%;
+    font-size: 1rem;
   }
 }
 
 .company__description {
   width: 72.3032069971%;
+  font-size: max(3.4666666667vw, 0.8125rem);
+  line-height: 136%;
 }
 @media screen and (min-width: 768px) {
   .company__description {
     width: 72.2222222222%;
+    font-size: 1rem;
   }
 }
 
