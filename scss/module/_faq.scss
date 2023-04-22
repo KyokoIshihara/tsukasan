@@ -39,17 +39,18 @@
 // QとAのデザイン
 .faq__list span {
     display: inline-block;
-    // width: vw(375, 21);
     width: min(vw(375, 21), rem(21));
     height: min(vw(375, 25), rem(25));
-    // height: vw(375, 25);
     background-repeat: no-repeat;
     background-size: contain;
     color: $main-color;
     font-family: $sub-font;
     font-size: clamp(rem(18), vw(375, 18), rem(24));
+    line-height: 1;
+    letter-spacing: 2.4px;
     font-weight: bold;
     margin-right: vw(375, 20);
+    margin-left: 2px;
     @include mq("md"){
         width: min(vw(1366, 28), rem(28));
         height: min(vw(1366, 33), rem(33));
@@ -73,6 +74,7 @@
 
 .faq__title p {
     font-size: max(vw(375, 13), rem(13));
+    line-height: 136%;
     @include mq("md"){
         font-size: rem(24);
     }
@@ -114,6 +116,7 @@
 
 .faq__description p {
     font-size: max(vw(375, 13), rem(13));
+    line-height: 136%;
     @include mq("md"){
         font-size: rem(16);
     }
@@ -145,4 +148,5 @@
     display: inline;
     font-size: inherit;
     text-decoration: underline;
+    text-underline-offset: 4px;
 }

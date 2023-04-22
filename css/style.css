@@ -2496,8 +2496,11 @@ body {
   color: #F45F5F;
   font-family: "Noto Sans", sans-serif;
   font-size: clamp(1.125rem, 4.8vw, 1.5rem);
+  line-height: 1;
+  letter-spacing: 2.4px;
   font-weight: bold;
   margin-right: 5.3333333333vw;
+  margin-left: 2px;
 }
 @media screen and (min-width: 768px) {
   .faq__list span {
@@ -2524,6 +2527,7 @@ body {
 
 .faq__title p {
   font-size: max(3.4666666667vw, 0.8125rem);
+  line-height: 136%;
 }
 @media screen and (min-width: 768px) {
   .faq__title p {
@@ -2569,6 +2573,7 @@ body {
 
 .faq__description p {
   font-size: max(3.4666666667vw, 0.8125rem);
+  line-height: 136%;
 }
 @media screen and (min-width: 768px) {
   .faq__description p {
@@ -2602,6 +2607,7 @@ body {
   display: inline;
   font-size: inherit;
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .faq-title {

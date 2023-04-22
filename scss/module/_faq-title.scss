@@ -34,10 +34,10 @@
 
 .faq-title__text::before {
     margin-right: min(vw(375, 10), 10px);
-
     @include mq("md") {
         margin-right: min(vw(1366, 10), rem(10));
         position: static;
         // margin-bottom: rem(10);
     }
 }
+
