@@ -17,7 +17,7 @@
     @include mq("md") {
         width: calc(354px / $inner * 100%);
         height: calc(143px / $inner * 100%);
-        margin-bottom: rem(16);
+        margin-bottom: 0;
     }
 
 }

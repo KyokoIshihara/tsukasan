@@ -6,7 +6,7 @@
     padding-bottom: max(vw(375, 228), rem(228));
 
     @include mq("md") {
-        padding-top: rem(141);
+        padding-top: rem(158.6);
         padding-bottom: rem(161);
         position: relative;
     }
@@ -27,8 +27,8 @@
     left: 0;
     @include mq("md"){
         height: rem(1075);
-        width: calc(812px / $inner * 100%);
-        left: -103px;
+        width: calc(12% + 50vw);
+        margin-left: calc(50% - 50vw);
     }
 }
 
@@ -125,6 +125,7 @@
     @include mq("md") {
         width: calc(240px / 864px * 100%);
         font-size: min(vw(1366, 16), rem(16));
+        margin-left: min(vw(1366, 40), rem(40));
     }
     
 }

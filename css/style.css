@@ -784,7 +784,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .section__pickup {
-    margin-bottom: min(5.8565153734vw, 5rem);
+    margin-bottom: min(5.1244509517vw, 4.375rem);
   }
 }
 
@@ -1464,7 +1464,7 @@ main {
     height: min(8.78477306vw, 7.5rem);
     margin-bottom: 0.75rem;
     margin-left: 0;
-    margin-right: 10px;
+    margin-right: -5px;
   }
 }
 
@@ -1546,7 +1546,7 @@ main {
     width: 100%;
     padding-top: min(1.4641288433vw, 1.25rem);
     flex-direction: row;
-    margin-bottom: 6.25rem;
+    margin-bottom: 9.65rem;
   }
 }
 
@@ -1562,9 +1562,9 @@ main {
     content: "";
     display: inline-block;
     width: 1px;
-    height: 103.3734939759%;
+    height: 106%;
     background-color: #F45F5F;
-    top: -28px;
+    top: -20px;
   }
 }
 
@@ -1599,7 +1599,7 @@ main {
 @media screen and (min-width: 768px) {
   .color__item {
     padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
+    padding-bottom: 2.5rem;
   }
 }
 
@@ -1609,6 +1609,7 @@ main {
 @media screen and (min-width: 768px) {
   .color__item-container1 .color__item:nth-of-type(1) {
     order: unset;
+    padding-bottom: 36px;
   }
 }
 
@@ -1620,6 +1621,8 @@ main {
 @media screen and (min-width: 768px) {
   .color__item-container1 .color__item:nth-of-type(2) {
     order: unset;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
   }
 }
 
@@ -1631,6 +1634,7 @@ main {
 @media screen and (min-width: 768px) {
   .color__item-container2 .color__item:nth-of-type(1) {
     padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
     order: unset;
   }
 }
@@ -1642,6 +1646,7 @@ main {
 @media screen and (min-width: 768px) {
   .color__item-container2 .color__item:nth-of-type(2) {
     order: unset;
+    padding-bottom: 3.75rem;
   }
 }
 
@@ -1653,6 +1658,8 @@ main {
 @media screen and (min-width: 768px) {
   .color__item-container2 .color__item:nth-of-type(3) {
     order: unset;
+    padding-top: 3.75rem;
+    padding-bottom: 3.375rem;
   }
 }
 
@@ -1665,7 +1672,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .color__item-container2 .color__item:nth-of-type(4) {
-    padding-top: unset;
+    padding-top: 3.75rem;
     margin-bottom: 0;
     order: unset;
   }
@@ -1687,6 +1694,7 @@ main {
 @media screen and (min-width: 768px) {
   .color__item-title {
     margin-top: 0;
+    margin-bottom: 2.4375rem;
   }
 }
 
@@ -1711,6 +1719,11 @@ main {
 .color__item-title--remote {
   letter-spacing: 0.15rem;
 }
+@media screen and (min-width: 768px) {
+  .color__item-title--remote {
+    letter-spacing: normal;
+  }
+}
 
 .color__item-title--remote::before {
   top: 0.6rem;
@@ -1726,7 +1739,7 @@ main {
 .color__images {
   width: 100%;
   display: block;
-  border-radius: 0 17% 0 17%;
+  border-radius: 0 25% 0 25%;
   margin-bottom: max(10.6666666667vw, 2.5rem);
 }
 @media screen and (min-width: 768px) {
@@ -1737,7 +1750,7 @@ main {
 }
 
 .color__images img {
-  border-radius: 0 17% 0 17%;
+  border-radius: 0 25% 0 25%;
 }
 
 .color__sentence {
@@ -1769,7 +1782,7 @@ main {
   .color-title__images {
     width: 34.5029239766%;
     height: 13.9376218324%;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 }
 
@@ -1785,7 +1798,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .jobinfo__inner {
-    padding-top: 8.8125rem;
+    padding-top: 9.9125rem;
     padding-bottom: 10.0625rem;
     position: relative;
   }
@@ -1807,8 +1820,8 @@ main {
 @media screen and (min-width: 768px) {
   .jobinfo__inner::before {
     height: 67.1875rem;
-    width: 79.1423001949%;
-    left: -103px;
+    width: calc(12% + 50vw);
+    margin-left: calc(50% - 50vw);
   }
 }
 
@@ -1905,6 +1918,7 @@ main {
   .joblist__title {
     width: 27.7777777778%;
     font-size: min(1.1713030747vw, 1rem);
+    margin-left: min(2.9282576867vw, 2.5rem);
   }
 }
 
