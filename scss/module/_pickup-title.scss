@@ -5,8 +5,9 @@
     margin-bottom: 0;
 
     @include mq("md") {
-        width: calc(171px / $inner * 100%);
+        width: calc(171px / 1026px * 100%);
         flex-direction: row;
+        justify-content: space-between;
         align-items: flex-end;
     }
 }
@@ -19,8 +20,9 @@
     @include mq("md") {
         all: unset;
         width: calc(136px / 171px * 100%);
-        margin-bottom: rem(-19);
-        margin-right: calc(19px / 171px *100%);
+        // width: min(vw(1366, 136), rem(136));
+        margin-bottom: rem(-9);
+        // margin-right: calc(19px / 171px *100%);
     }
 }
 
@@ -30,6 +32,8 @@
         writing-mode: vertical-rl;
         text-orientation: upright;
         font-size: rem(16);
+        letter-spacing: 7.4px;
+        margin-bottom: 0;
     }
 }
 

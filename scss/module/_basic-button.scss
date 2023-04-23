@@ -16,6 +16,8 @@
         width: min(vw(1366, 400), rem(400));
         height: min(vw(1366, 120), rem(120));
         margin-bottom: rem(12);
+        margin-left: 0;
+        margin-right: 10px;
     }
 }
 
@@ -51,7 +53,8 @@
         height: 100%;
         font-size: min(vw(1366, 24), rem(24));
         padding-top: min(vw(1366, 42), rem(42));
-        padding-bottom: min(vw(1366, 43), rem(43));
+        padding-bottom: min(vw(1366, 42), rem(40));
+        padding-left: min(vw(1366, 41), rem(41));
     }
 }
 
@@ -65,8 +68,10 @@
     @include mq("md") {
         width: min(vw(1366, 21), rem(21));
         height: min(vw(1366, 18), rem(18));
-        margin-right: un;
-        margin-left: inherit;
+        margin-right: unset;
+        margin-left: min(vw(1366, 41), rem(41));
+        margin-bottom: min(vw(1366, 7), rem(7));
+
     }
 }
 

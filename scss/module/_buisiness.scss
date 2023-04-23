@@ -5,8 +5,8 @@
     padding-bottom: rem(80);
 
     @include mq("md") {
-        padding-top: rem(120);
-        padding-top: rem(160);
+        padding-top: rem(128);
+        // padding-bottom: rem(160);
     }
 }
 
@@ -45,7 +45,7 @@
 }
 
 .buisiness__images {
-    border-radius: 0 16% 0 0;
+    border-radius: 0 25% 0 0;
     width: 100%;
     aspect-ratio: 343/257;
     position: relative;
@@ -62,7 +62,7 @@
     display: block;
     object-fit: cover;
     aspect-ratio: 343/257;
-    border-radius: 0 16% 0 0;
+    border-radius: 0 25% 0 0;
     margin-bottom: 40px;
 
     @include mq("md") {
@@ -77,9 +77,10 @@
     @include mq("md") {
         grid-area: 2 / 2 / 3 / 3;
         line-height: calc(28/16);
-
+        margin-bottom: -7px;
     }
 }
+
 
 // 偶数番目の設定
 .buisiness__item:nth-of-type(even) {
@@ -97,13 +98,13 @@
 
 .buisiness__item:nth-of-type(even) .buisiness__images {
     @include mq("md") {
-        border-radius: 15% 0 0 0;
+        border-radius: 25% 0 0 0;
         grid-area: 1 / 2 / 3 / 3;
     }
 }
 
 .buisiness__item:nth-of-type(even) .buisiness__images img {
-    border-radius: 15% 0 0 0;
+    border-radius: 25% 0 0 0;
 }
 
 .buisiness__item:nth-of-type(even) .buisiness__sentence {

@@ -25,7 +25,7 @@
 // Message
 .section__message {
     @include mq("md") {
-        margin-bottom: rem(210);
+        margin-bottom: rem(217);
     }
 }
 
@@ -57,7 +57,7 @@
 
     @include mq("md") {
         background-image: url("../images/buisiness-bg-line-PC-top.svg");
-        top: 195px;
+        top: 158px;
     }
 }
 
@@ -78,7 +78,7 @@
 
     @include mq("md") {
         background-image: url("../images/buisiness-bg-line-PC-bottom.svg");
-        bottom: -31px;
+        bottom: -38px;
     }
 }
 

@@ -727,7 +727,7 @@ main {
 
 @media screen and (min-width: 768px) {
   .section__message {
-    margin-bottom: 13.125rem;
+    margin-bottom: 13.5625rem;
   }
 }
 
@@ -754,7 +754,7 @@ main {
 @media screen and (min-width: 768px) {
   .section__buisiness::before {
     background-image: url("../images/buisiness-bg-line-PC-top.svg");
-    top: 195px;
+    top: 158px;
   }
 }
 
@@ -775,7 +775,7 @@ main {
 @media screen and (min-width: 768px) {
   .section__buisiness::after {
     background-image: url("../images/buisiness-bg-line-PC-bottom.svg");
-    bottom: -31px;
+    bottom: -38px;
   }
 }
 
@@ -1114,8 +1114,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .buisiness__inner {
-    padding-top: 7.5rem;
-    padding-top: 10rem;
+    padding-top: 8rem;
   }
 }
 
@@ -1153,7 +1152,7 @@ main {
 }
 
 .buisiness__images {
-  border-radius: 0 16% 0 0;
+  border-radius: 0 25% 0 0;
   width: 100%;
   aspect-ratio: 343/257;
   position: relative;
@@ -1172,7 +1171,7 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 343/257;
-  border-radius: 0 16% 0 0;
+  border-radius: 0 25% 0 0;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -1190,6 +1189,7 @@ main {
   .buisiness__sentence {
     grid-area: 2/2/3/3;
     line-height: 1.75;
+    margin-bottom: -7px;
   }
 }
 
@@ -1207,13 +1207,13 @@ main {
 
 @media screen and (min-width: 768px) {
   .buisiness__item:nth-of-type(even) .buisiness__images {
-    border-radius: 15% 0 0 0;
+    border-radius: 25% 0 0 0;
     grid-area: 1/2/3/3;
   }
 }
 
 .buisiness__item:nth-of-type(even) .buisiness__images img {
-  border-radius: 15% 0 0 0;
+  border-radius: 25% 0 0 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1230,7 +1230,7 @@ main {
   .buisiness-title {
     flex-direction: row;
     gap: 6.8125rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -1282,7 +1282,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: min(5.8565153734vw, 5rem);
+    margin-bottom: min(5.4904831625vw, 4.6875rem);
   }
 }
 
@@ -1303,7 +1303,7 @@ main {
 }
 @media screen and (min-width: 1226px) {
   .pickup span:first-of-type {
-    right: clamp(-99px, -7.2474377745vw, 0px);
+    right: clamp(-75px, -5.4904831625vw, 0px);
   }
 }
 
@@ -1318,6 +1318,11 @@ main {
   position: absolute;
   top: 10px;
   right: 0;
+}
+@media screen and (min-width: 768px) {
+  .pickup span:first-of-type::after {
+    top: 19px;
+  }
 }
 
 .pickup span:nth-of-type(2) {
@@ -1340,7 +1345,7 @@ main {
 @media screen and (min-width: 1226px) {
   .pickup span:nth-of-type(2) {
     bottom: 14.0688259109%;
-    right: clamp(-91px, -6.6617862372vw, 0px);
+    right: clamp(-70px, -5.1244509517vw, 0px);
   }
 }
 
@@ -1361,7 +1366,7 @@ main {
 }
 @media screen and (min-width: 1226px) {
   .pickup span:last-of-type {
-    left: clamp(-101px, -7.3938506589vw, 0px);
+    left: clamp(-75px, -5.4904831625vw, 0px);
   }
 }
 
@@ -1372,7 +1377,7 @@ main {
   height: 1px;
   background-color: #F45F5F;
   position: absolute;
-  top: -10px;
+  top: -20px;
   left: 0;
 }
 
@@ -1400,6 +1405,7 @@ main {
   .pickup-title {
     width: 16.6666666667%;
     flex-direction: row;
+    justify-content: space-between;
     align-items: flex-end;
   }
 }
@@ -1413,8 +1419,7 @@ main {
   .pickup-title__images {
     all: unset;
     width: 79.5321637427%;
-    margin-bottom: -1.1875rem;
-    margin-right: 11.1111111111%;
+    margin-bottom: -0.5625rem;
   }
 }
 
@@ -1426,6 +1431,8 @@ main {
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-size: 1rem;
+    letter-spacing: 7.4px;
+    margin-bottom: 0;
   }
 }
 
@@ -1456,6 +1463,8 @@ main {
     width: min(29.2825768668vw, 25rem);
     height: min(8.78477306vw, 7.5rem);
     margin-bottom: 0.75rem;
+    margin-left: 0;
+    margin-right: 10px;
   }
 }
 
@@ -1491,7 +1500,8 @@ main {
     height: 100%;
     font-size: min(1.756954612vw, 1.5rem);
     padding-top: min(3.074670571vw, 2.625rem);
-    padding-bottom: min(3.1478770132vw, 2.6875rem);
+    padding-bottom: min(3.074670571vw, 2.5rem);
+    padding-left: min(3.0014641288vw, 2.5625rem);
   }
 }
 
@@ -1505,8 +1515,9 @@ main {
   .basic-button__link::after {
     width: min(1.5373352855vw, 1.3125rem);
     height: min(1.317715959vw, 1.125rem);
-    margin-right: un;
-    margin-left: inherit;
+    margin-right: unset;
+    margin-left: min(3.0014641288vw, 2.5625rem);
+    margin-bottom: min(0.5124450952vw, 0.4375rem);
   }
 }
 

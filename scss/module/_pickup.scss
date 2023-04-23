@@ -19,7 +19,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: min(vw(1366, 80), rem(80)); 
+        margin-bottom: min(vw(1366, 75), rem(75)); 
     }
 }
 
@@ -40,7 +40,7 @@
 
     @include mq("lg") {
 
-        right: clamp(-99px, vw(1366, -99), 0px);
+        right: clamp(-75px, vw(1366, -75), 0px);
     }
 }
 
@@ -55,6 +55,10 @@
     position: absolute;
     top: 10px;
     right: 0;
+    @include mq("md"){
+        top: 19px;
+        // right: 21px;
+    }
 
 }
 
@@ -78,7 +82,7 @@
 
     @include mq("lg") {
         bottom: calc(139px / 988px * 100%);
-        right: clamp(-91px, vw(1366, -91), 0px);
+        right: clamp(-70px, vw(1366, -70), 0px);
     }
 }
 
@@ -99,7 +103,7 @@
     }
 
     @include mq("lg") {
-        left: clamp(-101px, vw(1366, -101), 0px);
+        left: clamp(-75px, vw(1366, -75), 0px);
     }
 }
 
@@ -110,7 +114,7 @@
     height: 1px;
     background-color: $main-color;
     position: absolute;
-    top: -10px;
+    top: -20px;
     left: 0;
 }
 
