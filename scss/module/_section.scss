@@ -119,8 +119,8 @@
     z-index: -99;
     @include mq("md"){
         background-image: url("../images/jobinfo-bg-line-PC-top.svg");
-        top: 143px;
-    }
+        top: 164px;
+}
 }
 // 背景下部の波線
 .section__jobinfo::after{
@@ -139,7 +139,7 @@
     @include mq("md"){
         background-image: url("../images/jobinfo-bg-line-PC-bottom.svg");
         bottom: -248px;
-        z-index: -1;
+        z-index: 1;
     }
 }
 

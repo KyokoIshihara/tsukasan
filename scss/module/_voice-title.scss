@@ -16,12 +16,12 @@
     margin-bottom: rem(-58.9);
     margin-left: vw(375, 16);
     @include mq("md"){
-        width: calc(402.51px / $inner * 100%);
-        height: calc(211.82px / $inner * 100%);
+        width: calc(402.51px / 1076px * 100%);
+        height: calc(211.82px / 1076px * 100%);
         margin-bottom: rem(-112.1);
     }
     @include mq("lg"){
-        margin-left: rem(-10.94);
+        margin-left: rem(13);
     }
 
 }
