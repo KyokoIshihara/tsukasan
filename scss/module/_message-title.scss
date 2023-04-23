@@ -11,9 +11,9 @@
 }
 
 .message-title__images {
-
+    
     @include mq("md") {
-        width: calc(514px / $inner * 100%);
+        width: min(vw(1366, 514), rem(514));
         height: auto;
         margin-right: calc(102.69px / $inner * 100%);
     }
