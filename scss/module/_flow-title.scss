@@ -7,6 +7,7 @@
         width: calc(172px / $inner * 100%);
         flex-direction: row;
         align-items: flex-end;
+        justify-content: space-between;
     }
 }
 
@@ -16,7 +17,7 @@
     @include mq("md") {
         all: unset;
         width: calc(136px / 172px * 100%);
-        margin-right: calc(20px / 172px *100%);
+        // margin-right: calc(20px / 172px *100%);
     }
 }
 
@@ -28,6 +29,7 @@
         text-orientation: upright;
         font-size: rem(16);
         margin-bottom: 0;
+        letter-spacing: 6.7px;
     }
 }
 

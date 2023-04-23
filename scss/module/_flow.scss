@@ -24,8 +24,8 @@
         // height: min(vw(1366, 241.34), rem(241.34));
         height: calc(241.34px / $inner * 100%);
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 46px;
+        right: 19px;
     }
     @include mq("lg"){
         margin-right: -34.36px;
