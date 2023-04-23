@@ -16,6 +16,8 @@
 
     @include mq("md") {
         padding-bottom: min(vw(1366, 160), 160px);
+        overflow: unset;
+        margin-bottom: 162px;
     }
 }
 
@@ -183,6 +185,7 @@
     padding-bottom: rem(80);
     @include mq("md"){
         border-radius: 0 0 15% 15%;
+        margin-inline: auto;
         // position: relative;
         // overflow: hidden;
     }

@@ -40,6 +40,7 @@
 .is-active .hamburger-menu {
     animation: btnRotate .5s ease;
     transform: rotate(90deg) translate(10px, -11px);
+    margin-right: 2px;
 }
 
 :is(.hamburger-menu__dot, .hamburger-menu__line)>* {
@@ -71,13 +72,13 @@
     }
 
     100% {
-        transform: translateX(11px);
+        transform: translateX(8px);
     }
 }
 
 .is-active .hamburger-menu__dot {
     animation: btnDotFlex .5s ease;
-    transform: translateX(11px);
+    transform: translateX(8px);
 }
 
 .hamburger-menu__dot span {
@@ -143,7 +144,7 @@
 
 @keyframes btnLineMove1 {
     0% {
-        transform: translateY(0px) rotate(0);
+        transform: translateY(0px) rotate(0) scaleX(1);
     }
 
     50% {
@@ -151,13 +152,13 @@
     }
 
     100% {
-        transform: translateY(7px) rotate(65deg);
+        transform: translateY(7px) rotate(65deg) scaleX(1.1);
     }
 }
 
 @keyframes btnLineMove2 {
     0% {
-        transform: translateY(0px) rotate(0);
+        transform: translateY(0px) rotate(0) scaleX(1);
     }
 
     50% {
@@ -165,16 +166,16 @@
     }
 
     100% {
-        transform: translateY(-7px) rotate(-65deg);
+        transform: translateY(-7px) rotate(-65deg) scaleX(1.1);
     }
 }
 
 .is-active .hamburger-menu__line span:nth-of-type(1) {
     animation: btnLineMove1 .5s ease;
-    transform: translateY(7px) rotate(60deg);
+    transform: translateY(7px) rotate(65deg) scaleX(1.1);
 }
 
 .is-active .hamburger-menu__line span:nth-of-type(2) {
     animation: btnLineMove2 .5s ease;
-    transform: translateY(-7px) rotate(-60deg);
+    transform: translateY(-7px) rotate(-65deg) scaleX(1.1);
 }

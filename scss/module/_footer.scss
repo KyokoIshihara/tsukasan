@@ -48,7 +48,7 @@
     padding-bottom: vw(375, 80);
     background-color: $sub-color;
     background-image: url(../images/footer-bg-SPforGRAY.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;   
     @include mq("md"){
         background-image: none;
@@ -64,7 +64,8 @@
     font-size: max(vw(375, 24), rem(24));
     font-weight: bold;
     // margin-bottom: rem(40);
-    margin-bottom: vw(375, 40);
+    margin-bottom: vw(375, 37);
+    font-style: normal;
     @include mq("md"){
         font-size: rem(24);
         margin-bottom: rem(78);
@@ -75,6 +76,7 @@
     // margin-bottom: rem(20);
     margin-bottom: vw(375, 20);
     font-size: rem(13);
+    line-height: 136%;
     @include mq("md"){
         margin-bottom: rem(14);
         font-size: rem(16);
