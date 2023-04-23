@@ -50,7 +50,8 @@
     @include mq("md"){
         display: flex;
         flex-direction: column;
-        width: calc(467.18px / 680px * 100%);
+        // width: calc(467.18px / 680px * 100%);
+        width: min(vw(1366, 467.18), rem(467.18));
     }
 }
 

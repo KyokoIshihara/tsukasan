@@ -180,40 +180,15 @@
     background-color: $sub-background;
     height: 100%;
     border-radius: 0 0 40px 40px;
-    // height: fit-content;
     max-width: 1366px;
     padding-top: rem(78);
     padding-bottom: rem(80);
     @include mq("md"){
-        border-radius: 0 0 15% 15%;
+        border-radius: 0 0 9% 9%;
         margin-inline: auto;
-        // position: relative;
-        // overflow: hidden;
+        padding-top: rem(85);
     }
 }
-
-.section__faq::before{
-    // content: "";
-    // width: 100vw;
-    // max-width: 1366px;
-    // border-radius: 0 0 15% 15%;
-    // display: block;
-    // height: 100%;
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // max-width: 1366px;
-    // background-color: $sub-background;
-    // display: none;
-    @include mq("md"){
-        // display: inline-block;
-        // position: absolute;
-        // z-index: -1;
-        // left: 50%;
-        // transform: translate(-50%, 0px);
-    }
-
-}
-
 
 // company
 .section__company {
@@ -238,7 +213,7 @@
     z-index: -99;
     @include mq("md"){
         background-image: url("../images/company-bg-line-PC.svg");
-        top: 244.08px;
+        top: 159.08px;
     }
 }
 
@@ -256,7 +231,7 @@
     margin-bottom: 0;
     @include mq("md"){
         background-size: 45px 45px;
-        
+        padding-top: rem(160);
     }
 }
 

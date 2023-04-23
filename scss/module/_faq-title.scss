@@ -6,8 +6,8 @@
     @include mq("md") {
         width: calc(262px / $inner * 100%);
         align-items: flex-start;
-        margin-left: calc(21px / $inner * 100%);
-        margin-bottom: min(vw(1366, 80), rem(80));
+        // margin-left: calc(21px / $inner * 100%);
+        margin-bottom: min(vw(1366, 87), rem(87));
 
     }
 }

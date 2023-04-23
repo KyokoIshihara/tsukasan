@@ -5,7 +5,7 @@
     // padding-bottom: min(vw(375, 160), rem(160));
     padding-bottom: 0;
     @include mq("md") {
-        padding-bottom: min(vw(1366, 160), rem(160));
+        padding-bottom: min(vw(1366, 88), rem(88));
     }
 }
 

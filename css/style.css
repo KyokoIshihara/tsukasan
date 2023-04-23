@@ -886,8 +886,9 @@ main {
 }
 @media screen and (min-width: 768px) {
   .section__faq {
-    border-radius: 0 0 15% 15%;
+    border-radius: 0 0 9% 9%;
     margin-inline: auto;
+    padding-top: 5.3125rem;
   }
 }
 
@@ -912,7 +913,7 @@ main {
 @media screen and (min-width: 768px) {
   .section__company::before {
     background-image: url("../images/company-bg-line-PC.svg");
-    top: 244.08px;
+    top: 159.08px;
   }
 }
 
@@ -931,6 +932,7 @@ main {
 @media screen and (min-width: 768px) {
   .section__entry {
     background-size: 45px 45px;
+    padding-top: 10rem;
   }
 }
 
@@ -2251,6 +2253,7 @@ main {
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
+    margin-left: 0;
   }
 }
 
@@ -2489,7 +2492,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .faq__inner {
-    padding-bottom: min(11.7130307467vw, 10rem);
+    padding-bottom: min(6.4421669107vw, 5.5rem);
   }
 }
 
@@ -2654,8 +2657,7 @@ main {
   .faq-title {
     width: 25.5360623782%;
     align-items: flex-start;
-    margin-left: 2.0467836257%;
-    margin-bottom: min(5.8565153734vw, 5rem);
+    margin-bottom: min(6.3689604685vw, 5.4375rem);
   }
 }
 
@@ -2732,7 +2734,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .company__inner {
-    padding-top: 10rem;
+    padding-top: 4.8rem;
     padding-bottom: 10rem;
     position: relative;
   }
@@ -2800,8 +2802,9 @@ main {
 }
 @media screen and (min-width: 768px) {
   .company__title {
-    width: 27.7777777778%;
+    width: min(14.6412884334vw, 12.5rem);
     font-size: 1rem;
+    margin-left: min(2.9282576867vw, 2.5rem);
   }
 }
 
@@ -2814,6 +2817,7 @@ main {
   .company__description {
     width: 72.2222222222%;
     font-size: 1rem;
+    line-height: 175%;
   }
 }
 
@@ -2869,8 +2873,8 @@ main {
 @media screen and (min-width: 768px) {
   .entry__content-container {
     width: 100%;
-    padding-left: min(6.8081991215vw, 5.8125rem);
-    padding-right: min(6.8081991215vw, 5.8125rem);
+    padding-left: min(8.4919472914vw, 7.25rem);
+    padding-right: min(8.7115666179vw, 7.4375rem);
   }
 }
 
@@ -2892,8 +2896,8 @@ main {
 }
 @media screen and (min-width: 768px) {
   .entry-title__images {
-    width: 37.2319688109%;
-    height: 14.1325536062%;
+    width: min(27.9648609078vw, 23.875rem);
+    height: min(10.6149341142vw, 9.0625rem);
     margin-bottom: min(1.0248901903vw, 0.875rem);
   }
 }
@@ -2960,7 +2964,7 @@ main {
   .entry-form__input-container {
     display: flex;
     flex-direction: column;
-    width: 68.7029411765%;
+    width: min(34.2005856515vw, 29.19875rem);
   }
 }
 
