@@ -8,6 +8,7 @@
         justify-content: start;
         align-items: flex-start;
         margin-bottom: rem(80);
+        margin-left: min(vw(1366, 53), rem(53));
     }
 }
 

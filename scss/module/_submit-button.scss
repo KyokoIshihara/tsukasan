@@ -1,5 +1,9 @@
 @use "../global" as *;
 
+.submit-button__container {
+    margin-left: rem(24);
+}
+
 .submit-button__link {
     transition: transform .5s ease, background-color .5s ease;
     cursor: pointer;

@@ -19,8 +19,8 @@
         width: calc(691px / $inner * 100%);
         padding-top: 0;
         padding-bottom: rem(126);
+        padding-right: min(vw(1366, 30), rem(30));
         padding-left: 0;
-        padding-right: 0;
         flex-direction: column-reverse;
         justify-content: start;
     }
@@ -62,6 +62,7 @@
         font-size: rem(24);
         padding-top: rem(42);
         padding-bottom: rem(43);
+        padding-left: min(vw(1366, 38), rem(38));
     }
 }
 
@@ -74,4 +75,8 @@
     mask-size: contain;
     background-image: none;
     margin-left: 37px;
+    @include mq("md"){
+        margin-left: 45px;
+        margin-bottom: 0;
+    }
 }

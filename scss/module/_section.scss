@@ -231,7 +231,10 @@
     margin-bottom: 0;
     @include mq("md"){
         background-size: 45px 45px;
-        padding-top: rem(160);
+        padding-top: rem(166);
+        padding-bottom: rem(160);
+        background-image: radial-gradient(#f45f5fad 2.3px, transparent 2.3px);
+        background-position: -1.5% -1%;
     }
 }
 

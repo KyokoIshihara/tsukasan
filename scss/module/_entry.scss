@@ -19,10 +19,14 @@
     position: relative;
     z-index: 0;
     @include mq("md") {
-        padding-top: rem(160);
+        width: 100%;
+        max-width: 1026px;
+        // width: min(vw(1366, 1026), rem(1026));
+        border-radius: 0 100px 0 100px;
+        padding-top: rem(152);
         padding-bottom: rem(160);
-        padding-left: min(vw(1366, 78), rem(78));
-        padding-right: min(vw(1366, 82), rem(82));
+        padding-left: $padding-pc;
+        padding-right: $padding-pc;
     }
 }
 
@@ -42,7 +46,7 @@
         display: inline-block;
         height: calc(159px / $inner * 100%);
         width: calc(171px / $inner * 100%);
-        bottom: rem(-58);
+        bottom: rem(-51);
         right: 0;
     }
     @include mq("lg"){
@@ -57,7 +61,7 @@
         // width: min(vw(1366, 680), rem(680));
         width: 100%;
         // margin: 0 auto;
-        padding-left: min(vw(1366, 116), rem(116));
-        padding-right: min(vw(1366, 119), rem(119));
+        padding-left: min(vw(1366, 100), rem(100));
+        padding-right: min(vw(1366, 94), rem(94));
     }
 }
